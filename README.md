@@ -58,6 +58,23 @@
 * Result
 ![Alt text](/images/00.png)
 
+## 監視組態變更
+* 在`ConfigurationBuilder` 上使用 [`AddJsonFile(IConfigurationBuilder, String, Boolean, Boolean)`](https://docs.microsoft.com/zh-tw/aspnet/core/fundamentals/change-tokens?view=aspnetcore-2.2), `reloadOnChange` 指出組態是否應該在檔案變更時重新載入
+    ```
+    config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
+    ```
+    檔案型組態是以 `FileConfigurationSource` 表示。 `FileConfigurationSource` 會使用 `IFileProvider` 來監視檔案。
+    根據預設，`IFileMonitor` 由 `PhysicalFileProvider` 提供，它會使用 `FileSystemWatcher` 來監視組態檔變更。
+
+* Demo
+    ```
+    cd src/ReloadOnChange
+    dotnet run
+    ```
+
+![Alt text](/images/01.png)
+
 
 ## 透過Consul Server 來存取組態資訊
 ### Set up 
@@ -69,4 +86,5 @@ docker-compose up -d
 ## 參考連結
 * [.NET Core 配置Configuration](https://www.cnblogs.com/stulzq/p/8570496.html)
 * [ASP.NET Core Configuration 的設定](https://docs.microsoft.com/zh-tw/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2)
+* [ASP.NET Core Change Token](https://docs.microsoft.com/zh-tw/aspnet/core/fundamentals/change-tokens?view=aspnetcore-2.2)
 * [Consul](https://github.com/hashicorp/consul)

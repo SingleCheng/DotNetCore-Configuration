@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "src\ConsoleAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "src\Web\Web.csproj", "{DC45C126-374D-4B38-8BEC-073F0B7B0BA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReloadOnChange", "src\ReloadOnChange\ReloadOnChange.csproj", "{43AF8758-19F7-4A76-87EE-9B81BC56B486}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{DC45C126-374D-4B38-8BEC-073F0B7B0BA5}.Release|x64.Build.0 = Release|Any CPU
 		{DC45C126-374D-4B38-8BEC-073F0B7B0BA5}.Release|x86.ActiveCfg = Release|Any CPU
 		{DC45C126-374D-4B38-8BEC-073F0B7B0BA5}.Release|x86.Build.0 = Release|Any CPU
+		{43AF8758-19F7-4A76-87EE-9B81BC56B486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43AF8758-19F7-4A76-87EE-9B81BC56B486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43AF8758-19F7-4A76-87EE-9B81BC56B486}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{43AF8758-19F7-4A76-87EE-9B81BC56B486}.Debug|x64.Build.0 = Debug|Any CPU
+		{43AF8758-19F7-4A76-87EE-9B81BC56B486}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{43AF8758-19F7-4A76-87EE-9B81BC56B486}.Debug|x86.Build.0 = Debug|Any CPU
+		{43AF8758-19F7-4A76-87EE-9B81BC56B486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43AF8758-19F7-4A76-87EE-9B81BC56B486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43AF8758-19F7-4A76-87EE-9B81BC56B486}.Release|x64.ActiveCfg = Release|Any CPU
+		{43AF8758-19F7-4A76-87EE-9B81BC56B486}.Release|x64.Build.0 = Release|Any CPU
+		{43AF8758-19F7-4A76-87EE-9B81BC56B486}.Release|x86.ActiveCfg = Release|Any CPU
+		{43AF8758-19F7-4A76-87EE-9B81BC56B486}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
